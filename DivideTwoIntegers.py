@@ -18,7 +18,7 @@ class Solution:
         return quotient*sign
 
 
-class Solution:
+class Solution2:
     # @return an integer
     def divide(self, dividend, divisor):
         sign = 1 if (dividend > 0 and divisor > 0) or (dividend < 0 and divisor < 0) else -1
