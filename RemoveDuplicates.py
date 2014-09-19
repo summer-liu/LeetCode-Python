@@ -1,5 +1,7 @@
 class Solution:
-	def removedup(self, A):
+    # @param a list of integers
+    # @return an integer
+    def removeDuplicates(self, A):
 		n = len(A)
 		if n == 0:
 			return 0
@@ -14,5 +16,5 @@ class Solution:
 
 s = Solution()
 A = [1,1,1,2,2,3,3,4]
-a = s.removedup(A)
+a = s.removeDuplicates(A)
 print a
