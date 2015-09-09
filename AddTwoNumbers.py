@@ -53,7 +53,7 @@ class Solution:
             p = p.next
         if (sum //10 == 1):
             p.next = ListNode(1)
-        return p.next
+        return dummy.next
    
             
         
