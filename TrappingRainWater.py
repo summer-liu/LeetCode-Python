@@ -38,6 +38,22 @@ class Solution:
 		return water
 
 
+	def traprainwater3(self, A):
+		n = len(A)
+		water = 0
+		max_left = [0] * n
+		max_right = [0] * n
+		for i in range(1,n):
+			max_left[i] = max(max_left[i-1], A[i-1])
+			max_right[n-i-1] = max(max_right[n-i], A[n-i])
+		for i in range(n):
+			h = min(max_left[i], max_right[i])
+			if h > A[i]:
+				water += h - A[i]
+		return water
+
+
+
 
 s = Solution()
 m = [0,1,0,2,1,0,1,3,2,1,2,1]
